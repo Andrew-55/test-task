@@ -10,19 +10,19 @@ class ItcAccordion {
   }
   addEventListener() {
     this._el.addEventListener("click", (e) => {
-      const elHeader = e.target.closest(".accordion__header");
+      const elHeader = e.target.closest(".accordion_header");
       if (!elHeader) {
         return;
       }
       if (!this._config.alwaysOpen) {
-        const elOpenItem = this._el.querySelector(".accordion__item_show");
+        const elOpenItem = this._el.querySelector(".accordion_item_show");
         if (elOpenItem) {
           elOpenItem !== elHeader.parentElement
-            ? elOpenItem.classList.toggle("accordion__item_show")
+            ? elOpenItem.classList.toggle("accordion_item_show")
             : null;
         }
       }
-      elHeader.parentElement.classList.toggle("accordion__item_show");
+      elHeader.parentElement.classList.toggle("accordion_item_show");
     });
   }
 }
