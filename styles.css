@@ -32,8 +32,6 @@ article p {
     display: flex;
 }
 
-
-
 .accordion_block {
     display: block;
     width: 50%;
@@ -95,8 +93,15 @@ article p {
     display: none;
 }
 
+.cards_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .card_item {
     display: block;
+    margin: 15px; 
     width: 290px;
     height: 435px;
     background-color: #EFF5F5;
@@ -122,4 +127,25 @@ article p {
     margin: 0;
     font-size: 18px;
     color: #264E58;
+}
+
+.product_vender_code {
+    margin: 0;
+    font-size: 14px;
+    color: #A5A5a5;
+}
+
+.product_vender_code span {
+    color: #264E58
+}
+
+.product_price {
+    margin: 0;
+    font-size: 14px;
+    color: #A5A5a5;
+}
+
+.product_price span {
+    font-size: 24px;
+    color: #6E6659;
 }
