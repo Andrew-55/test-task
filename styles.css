@@ -13,6 +13,7 @@ body {
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 article {
@@ -118,19 +119,16 @@ article p {
 }
 
 .product_type {
-    margin: 0;
     font-size: 14px;
     color: #6E6659;
 }
 
 .product_name {
-    margin: 0;
     font-size: 18px;
     color: #264E58;
 }
 
 .product_vender_code {
-    margin: 0;
     font-size: 14px;
     color: #A5A5a5;
 }
@@ -140,7 +138,6 @@ article p {
 }
 
 .product_price {
-    margin: 0;
     font-size: 14px;
     color: #A5A5a5;
 }
@@ -148,4 +145,61 @@ article p {
 .product_price span {
     font-size: 24px;
     color: #6E6659;
+}
+
+.request_section {
+    background-image: url("./images/background_form.png");
+    color: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.request_container {
+    width: 80%;
+    margin: auto;
+}
+
+.request_header {
+    font-family: "Gotham Pro";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#request_form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.request_description {
+    display: block;
+    font-family: "Gotham Pro";
+    font-size: 18;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.request_agreement {
+    grid-column: 1/3;
+    grid-row: 2;
+    font-size: 14px;
+}
+
+.request_agreement  a {
+    color: #EB7979;
+}
+
+#request_submit {
+    background-color: #E5E5E5;
+    grid-column-start: 3;
+}
+
+#request_name, #request_phone, #request_email {
+    height: 50px;
+    color: #FFFFFF;
+    background: #E5E5E5;
+    opacity: 0.3;
+    border: 1px solid #FFFFFF;
 }
