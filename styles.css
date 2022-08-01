@@ -178,6 +178,7 @@ article p {
     font-family: "Gotham Pro";
     font-size: 18;
     font-weight: 400;
+    letter-spacing: 0.25px;
     margin-bottom: 20px;
 }
 
@@ -194,12 +195,29 @@ article p {
 #request_submit {
     background-color: #E5E5E5;
     grid-column-start: 3;
+    cursor: pointer;
 }
 
 #request_name, #request_phone, #request_email {
     height: 50px;
-    color: #FFFFFF;
-    background: #E5E5E5;
-    opacity: 0.3;
+    color: #FFFFFFFF;
+    background: none;
     border: 1px solid #FFFFFF;
+    padding: 1em 2em;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+}
+
+.diagrams_count_sell_birds {
+    display: flex;
+    width: 50%;
+}
+.diagrams_header_count_sell_birds {
+    width: 100%;
+}
+
+.canvas_myChart {
+    width: 350px;
 }

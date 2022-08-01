@@ -168,13 +168,31 @@
                 <input id="request_name" name="name" type="text" placeholder="Ваше имя" required>
                 <input id="request_phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
                 <input id="request_email" name="email" type="email" placeholder="Эл. почта" required>
-                <p class="request_agreement">Нажимая кнопку, я принимаю <a href="">пользовательское соглашение</a>, соглашаюсь с политикой конфиденциальности,
+                <p class="request_agreement">Нажимая кнопку, я принимаю <a href="">пользовательское соглашение</a>,
+                    соглашаюсь с политикой конфиденциальности,
                     условиями пользования сайтом, передачей и обработкой моих персональных данных</p>
                 <button id="request_submit" type="submit">Оформить заявку</button>
             </form>
         </div>
     </section>
+    <section class="diagrams_section">
+        <p>Предыдущий период</p>
+        <h2 class="diagrams_header">Продажи</h2>
+        <div class="diagrams_count_sell_birds">
+            <h3 class="diagrams_header_count_sell_birds">Количество проданных птицц</h3>
+            <div class="canvas_myChart">
+                <canvas id="myChart_one"></canvas>
+            </div>
+            <div class="canvas_myChart">
+                <canvas id="myChart_two"></canvas>
+            </div>
+        </div>
+        <h3>Выручка</h3>
+
+
+    </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.js"></script>
 <script src="script.js"></script>
 
 </html>
